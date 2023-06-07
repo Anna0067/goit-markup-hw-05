@@ -27,6 +27,7 @@
                         </li>
                         <li>
                             <a class="links" href="./index.html">Agencja</a>
+                            <div class="underscore"></div>
                         </li>
                         <li>
                             <a class="links" href="./portfolio.html"
@@ -75,7 +76,7 @@
                         EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU
                     </h1>
 
-                    <button class="main-button" type="button">
+                    <button type="button" class="main-button" data-modal-open>
                         Zamów usługe
                     </button>
                 </div>
@@ -542,5 +543,13 @@
                 </address>
             </div>
         </footer>
+        <div class="backdrop is-hidden" data-modal>
+            <div class="modal">
+                <button type="button" class="modal-close" data-modal-close="">
+                    X
+                </button>
+            </div>
+        </div>
+        <script src="./js/modal.js"></script>
     </body>
 </html>

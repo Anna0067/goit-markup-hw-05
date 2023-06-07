@@ -111,6 +111,38 @@ a {
     color: var(--brand-color);
 }
 
+.underscore {
+    position: relative;
+    top: 28px;
+}
+
+.underscore::after {
+    content: "";
+    position: absolute;
+    left: 0;
+
+    display: block;
+    width: 53px;
+    height: 4px;
+    background-color: #2196f3;
+    border-radius: 2px;
+}
+
+.underscore-portfolio {
+    position: relative;
+    top: 28px;
+}
+
+.underscore-portfolio::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    display: block;
+    width: 58px;
+    height: 4px;
+    background-color: #2196f3;
+    border-radius: 2px;
+}
 .title {
     font-family: "Raleway", sans-serif;
     color: var(--title);
@@ -158,6 +190,53 @@ a {
     height: 50px;
     left: 700px;
     top: 430px;
+}
+.backdrop {
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.2);
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 1;
+    cursor: not-allowed;
+    transform: scale(1);
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal {
+    position: relative;
+    margin: auto;
+    background: #ffffff;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 2px 1px rgba(0, 0, 0, 0.2);
+    width: 528px;
+    height: 581px;
+    cursor: auto;
+}
+.modal-close {
+    border-radius: 50%;
+    border-color: var(--border-lightgrey);
+    color: #212121;
+    fill: #212121;
+    width: 30px;
+    height: 30px;
+    background-color: var(--title);
+    position: absolute;
+    top: 8px;
+    left: 91%;
+    cursor: pointer;
+}
+.close-x {
+    fill: var(--black);
+}
+.is-hidden {
+    pointer-events: none;
+    visibility: hidden;
+    opacity: 0;
+    transform: translateX(-50%) translateY(-50%) scale(0) rotate(0deg)
+        skew(40deg 40deg);
 }
 .lorem-ipsum-icons {
     text-align: center;
@@ -240,6 +319,7 @@ a {
     position: relative;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    display: flex;
 }
 
 .john-doe-section {
@@ -382,6 +462,7 @@ a {
 }
 
 .portfolio-images {
+    position: relative;
     list-style-type: none;
     cursor: pointer;
     margin: auto;
@@ -410,6 +491,38 @@ a {
     flex-wrap: wrap;
     justify-content: space-between;
     padding-bottom: 94px;
+}
+.img-animation {
+    position: relative;
+    overflow: hidden;
+}
+.overlay {
+    position: absolute;
+    border: #000000;
+    border-width: 1px;
+    inset: 0;
+    padding: 0.5em;
+    width: 370px;
+    height: 294px;
+    background-color: var(--brand-color);
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transform: translateY(100%);
+}
+.overlay-text {
+    position: absolute;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 0.03em;
+    color: var(--grey);
+    padding: 30px 24px;
+}
+
+.overlay:hover .overlay:focus .img-animation:hover {
+    transform: translateY(0%);
 }
 
 .logo-web-footer {
