@@ -73,6 +73,8 @@ header {
 .links:active,
 .links:hover {
     color: var(--brand-color);
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .envelope-smartphone {
@@ -89,6 +91,8 @@ header {
 .envelope-smartphone:focus {
     color: var(--brand-color);
     fill: var(--brand-color);
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 a {
@@ -388,6 +392,8 @@ a {
     background-color: var(--brand-color);
     padding: 10px;
     border-radius: 50%;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .company-icons {
@@ -416,6 +422,8 @@ a {
 .company-border:focus {
     fill: var(--brand-color);
     border-color: var(--brand-color);
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-buttons {
@@ -446,6 +454,8 @@ a {
     background: var(--brand-color);
     color: var(--button-white);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .portfolio-buttons:focus {
     background: var(--brand-color);
@@ -475,6 +485,8 @@ a {
 }
 .portfolio-images:hover .overlay-text {
     transform: translateY(-100%);
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-image-description {
@@ -516,6 +528,8 @@ a {
 }
 .img-animation:hover .overlay-text:hover {
     transform: translateY(0%);
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .logo-web-footer {
@@ -554,6 +568,8 @@ a {
 .footer-contact:active,
 .footer-contact:hover {
     color: var(--brand-color);
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .joined-us {
     font-family: "Roboto";
@@ -586,7 +602,54 @@ a {
 .social-media-footer-single:hover {
     background-color: var(--brand-color);
     border-radius: 50%;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-sections {
     display: flex;
+}
+.sign-up {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
+    background-color: #2196f3;
+    width: 200px;
+    height: 50px;
+    text-align: center;
+    color: white;
+}
+.newsletter {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    width: 448px;
+    height: 23px;
+    left: 561px;
+    top: 262px;
+    padding-bottom: 20px;
+}
+.footer-newsletter {
+    display: inline;
+    width: 570px;
+    height: 86px;
+    padding-left: 78px;
+}
+.email-button-section {
+    display: flex;
+    gap: 12px;
+    padding-top: 20px;
+}
+.footer-email {
+    width: 358px;
+    height: 50px;
+    font-size: 16px;
+    padding-left: 16px;
+    background-color: var(--backgroud-grey);
+    border: 1px solid rgba(255, 255, 255, 0.3);
 }
